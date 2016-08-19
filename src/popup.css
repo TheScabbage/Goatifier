@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+*[clickable=true]:hover {
+	cursor: pointer;
+}
+
+*[clickable=false]:hover {
+	cursor: default;
+}
+
+*:focus {
+	outline: none !important;
+}
+
+*[available=true] {
+	color: rgb(0, 204, 0);
+}
+
+*[available=true]:hover {
+	color: rgb(0, 255, 0);
+}
+
+*[available=false] {
+	color: rgb(204, 0, 0);
+}
+
+*[available=false]:hover {
+	color: rgb(255, 0, 0);
+	cursor: default;
+}
+
+*[available=true]:active {
+	color: rgb(77, 184, 255);
+}
+
+*[available=true], *[available=false] {
+	background-color: rgb(242, 242, 242);
+	border-left: solid 8px;
+	border-right: solid 8px;
+	border-top-style: none;
+	border-bottom-style: none;
+	font-family: 'Roboto', sans-serif;
+	padding: 4px;
+	text-align: center;
+}
+
+*[available=true]:hover, *[available=false]:hover {
+	background-color: rgb(230, 230, 230);
+}
+
+html {
+	-webkit-user-select: none;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 4px;
+	padding: 4px;
+	border-bottom: solid thin #000;
+	text-align: center;
+}

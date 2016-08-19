@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Goatifier Options</title>
+		<link rel="stylesheet" type="text/css" href="options.css">
+	</head>
+	<body>
+		<form>
+			<div>
+				<div id="top">
+					<label>
+						<span title="Automatically Goatify any page you go to">
+							Goatify any page&nbsp;&nbsp;
+							<input type="checkbox" id="allPages" />
+						</span>
+					</label>
+					<label>
+						<span title="Send console debug messages from Goatifier (disabled because there's a lot)">
+							Console debug messages&nbsp;&nbsp;
+							<input type="checkbox" id="consoleDebugMessages" />
+						</span>
+					</label>
+					<label>
+						<span title="Replace the website's images with pictures of the all mighty One True God: Goats">
+							Goatify Images&nbsp;&nbsp;
+							<input type="checkbox" id="goatImages" checked />
+						</span>
+					</label>
+					<label>
+						<span title="Replace text with the word 'Goat'">
+							Goatify Text&nbsp;&nbsp;
+							<input type="checkbox" id="goatText" checked />
+						</span>
+					</label>
+					<br />
+				</div>
+				<br />
+				<div id="mid">
+					<label>
+						<span title="Probability of words getting replaced">
+							Replace Probability&nbsp;&nbsp;
+							<select>
+								<option id="prob_1">1</option>
+								<option id="prob_2">2</option>
+								<option id="prob_3">3</option>
+								<option id="prob_4">4</option>
+								<option id="prob_5">5</option>
+
+								<option id="prob_10">10</option>
+								<option id="prob_15">15</option>
+								<option id="prob_20">20</option>
+								<option id="prob_25">25</option>
+								<option id="prob_30">30</option>
+								<option id="prob_35">35</option>
+								<option id="prob_40">40</option>
+								<option id="prob_45">45</option>
+								<option id="prob_50">50</option>
+
+								<option id="prob_55">55</option>
+								<option id="prob_60">60</option>
+								<option id="prob_65">65</option>
+								<option id="prob_70">70</option>
+								<option id="prob_75">75</option>
+								<option id="prob_80">80</option>
+								<option id="prob_85">85</option>
+								<option id="prob_90">90</option>
+								<option id="prob_95">95</option>
+								<option id="prob_100" selected="true">100</option>
+							</select>
+						</span>
+					</label>
+					<br />
+				</div>
+				<br />
+				<div id="bot">
+					<table>
+						<span title="Sites that will be automatically Goatified">
+							<th>Auto-Goat Website List</th>
+							<tr>
+								<td>
+									<textarea id="whitelist" class="currentSites" rows="9" cols="57"></textarea>
+									<br />
+								</td>
+							</tr>
+						</span>
+						<span title="Sites that will not be automatically Goatified">
+							<th>Anti-Goat Website List</th>
+							<tr>
+								<td>
+									<textarea id="blacklist" class="currentSites" rows="9" cols="57"></textarea>
+									<br />
+								</td>
+							</tr>
+						</span>
+					</table>
+				</div>
+			</div>
+		</form>
+		<br />
+		<div id="status"></div>
+		<button class="btn" id="save" style="vertical-align: middle;" func="save">
+			<span class="spn" func="save">Save </span>
+		</button>
+
+		<button class="btn" id="cancel" style="vertical-align: middle;" func="cancel">
+			<span class="spn" func="cancel">Cancel </span>
+		</button>
+
+		<!--<script src="options.js"></script>-->
+	</body>
+</html>
