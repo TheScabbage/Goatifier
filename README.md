@@ -1,5 +1,4 @@
 # Goatifier
 Surfing the Web the way it was meant to be.
 
-
-why u read me betch ill rek u
+Replaces every image on all webpages with a random picture of a goat.
